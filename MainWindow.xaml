@@ -1,9 +1,13 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:local="clr-namespace:templateDotnetCoreAvalonia;assembly=templateDotnetCoreAvalonia"
+        xmlns:localModels="clr-namespace:templateDotnetCoreAvalonia.Models;assembly=templateDotnetCoreAvalonia"
         MinWidth="500"
         MinHeight="300"
         Title="Avalonia Template">
+    <Window.DataContext>
+        <localModels:Main />
+    </Window.DataContext>
     <DockPanel>
-        <TextBlock>Hello World!</TextBlock>
+        <TextBlock Text="{Binding Path=Message}"></TextBlock>
     </DockPanel>
 </Window>

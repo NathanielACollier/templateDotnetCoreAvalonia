@@ -11,6 +11,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="0.5.1" />
+    <PackageReference Include="ViewModelBase" Version="1.0.5" />
   </ItemGroup>
 
 </Project>
