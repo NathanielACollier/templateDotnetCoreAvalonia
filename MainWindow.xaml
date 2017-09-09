@@ -9,7 +9,7 @@
     </Window.DataContext>
     <DockPanel>
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
             <TextBlock Text="Message: " />
             <TextBox Text="{Binding Path=Message, Mode=TwoWay}" />
         </StackPanel>
