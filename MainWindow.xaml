@@ -8,6 +8,12 @@
         <localModels:Main />
     </Window.DataContext>
     <DockPanel>
-        <TextBlock Text="{Binding Path=Message}"></TextBlock>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Message: " />
+            <TextBox Text="{Binding Path=Message, Mode=TwoWay}" />
+        </StackPanel>
+
+        <TextBlock DockPanel.Dock="Bottom" Text="{Binding Path=Message}"></TextBlock>
     </DockPanel>
 </Window>
